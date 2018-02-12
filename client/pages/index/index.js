@@ -8,6 +8,7 @@ Page({
       windowWidth: wx.getSystemInfoSync().windowWidth,
       start_clientX: 0,
       end_clientX: 0,
+      //动画属性
       animationData: {}
     },
     // 滑动开始  
