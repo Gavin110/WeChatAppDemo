@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<!-- <view class="container index" style="{{mainTranslate}}" bindtouchend='touchend' bindtouchstart='touchstart'>
+   <view class='view1'>Hello,World!</view>
+   <view class='view2'>World!!</view>
+   <view class='view3'>Hello!!</view>
+</view> -->
+
+<view class="container index" animation="{{animationData}}" bindtouchend='touchend' bindtouchstart='touchstart'>
+   <view class='view1'>Hello,World!</view>
+   <view class='view2'>World!!</view>
+   <view class='view3'>Hello!!</view>
+</view>
