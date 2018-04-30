@@ -1,0 +1,150 @@
+<!--pages/Realty/SourceDetail.wxml-->
+<view class="container source_detail">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{movies}}" wx:key="Id" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='feature_view'>
+    <view class='feature_inner_view'>
+      低楼层无遮挡双卫两居可塑性强私密性好
+    </view>
+  </view>
+  <view class='feature1_view'>
+    <view class='feature1_price_view'>
+      <text class='inner_name'>售价</text>
+      <text class='inner_val'>121212</text>
+    </view>
+    <view class='feature1_type_view'>
+      <text class='inner_name'>房型</text>
+      <text class='inner_val'>两室一厅</text>
+    </view>
+    <view class='feature1_area_view'>
+      <text class='inner_name'>建筑面积</text>
+      <text class='inner_val'>74平</text>
+    </view>
+  </view>
+  <view class='advantage_view'>
+    <text class='advantage1_text'>地铁房</text>
+    <text class='advantage2_text'>随时看房</text>
+  </view>
+  <view class='feature2_view'>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        朝向：
+      </view>
+      <view class='feature2_val'>
+        西南
+      </view>
+    </view>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        修缮金：
+      </view>
+      <view class='feature2_val'>
+        20000
+      </view>
+    </view>
+  </view>
+  <view class='feature2_view'>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        回报率：
+      </view>
+      <view class='feature2_val'>
+        8%
+      </view>
+    </view>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        楼层：
+      </view>
+      <view class='feature2_val'>
+        6/7层
+      </view>
+    </view>
+  </view>
+  <view class='feature2_view'>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        管理费：
+      </view>
+      <view class='feature2_val'>
+        4000
+      </view>
+    </view>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        租金：
+      </view>
+      <view class='feature2_val'>
+        8500
+      </view>
+    </view>
+  </view>
+  <view class='feature2_view'>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        建筑年：
+      </view>
+      <view class='feature2_val'>
+        2001
+      </view>
+    </view>
+    <view class='feature2_inner'>
+      <view class='feature2_name'>
+        现状：
+      </view>
+      <view class='feature2_val'>
+        闲置
+      </view>
+    </view>
+  </view>
+  <view class='feature2_row_view'>
+    <view class='feature2_name'>
+      土地权利：
+    </view>
+    <view class='feature2_val'>
+      40年产权所有权
+    </view>
+  </view>
+  <view class='feature2_row_view'>
+    <view class='feature2_name'>
+      地址：
+    </view>
+    <view class='feature2_val'>
+      上海市杨浦区军工路200号上汽大通
+    </view>
+  </view>
+  <view class='feature2_row_view'>
+    <view class='feature2_name'>
+      交通：
+    </view>
+    <view class='feature2_val'>
+      8号线市光路
+    </view>
+  </view>
+  <map id="myMap" style="width: 95%; height: 300px;margin-top:5rpx;border:1rpx solid #c7d0d7" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location></map>
+
+<view class='feature3_view'>
+  <view class='feature3_title_view'>
+    房源介绍
+  </view>
+  <view class='feature3_content_view'>
+    核心卖点 正规二居室格局，把边户型，中高层视野开阔，中心介绍 正规二居室，户型方正，无任何浪费面积，西南朝向，事业采光都很好。
+  </view>
+</view>
+<view style='width:95%;height:170rpx;'></view>
+<view class='bottom_view'>
+  <view class='attention_view'>
+    <image src="../../../images/love_sele.png"></image>
+    <text>已关注</text>
+  </view>
+  <view class='commit_view'>
+    <button>提交购房意向</button>
+  </view>
+</view>
+
+</view>

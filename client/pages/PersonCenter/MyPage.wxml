@@ -1,0 +1,28 @@
+<!--pages/PersonCenter/MyPage.wxml-->
+<view class="container my_page">
+  <view class='user_view'>
+    <image src="http://lc-zkmoosmi.cn-n1.lcfile.com/6fd6d71623c6d3f6d198.jpeg"></image>
+    <view class='user_phone_view'>17621214708</view>
+  </view>
+  <view class='user_content_view'>
+    <view class='content_inner_view'>
+      <text class='content_name'>我关注的佳佳</text>
+      <image src="../../../images/right_array.png"></image>
+    </view>
+    <view class='content_inner_view'>
+      <text class='content_name'>进度查询</text>
+      <image src="../../../images/right_array.png"></image>
+    </view>
+    <view class='content_inner_view'>
+      <text class='content_name'>佣金查询</text>
+      <image src="../../../images/right_array.png"></image>
+    </view>
+    <view class='content_inner_view'>
+      <text class='content_name'>子账号管理</text>
+      <image src="../../../images/right_array.png"></image>
+    </view>
+  </view>
+  <view class='quit_button_view'>
+    <button>退出登陆</button>
+  </view>
+</view>

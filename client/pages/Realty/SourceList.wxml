@@ -1,0 +1,23 @@
+<!--pages/realty/SourceList.wxml-->
+<view class="container source_list">
+  <view class='search_view'>
+    <input confirm-type='search' type='text' bindconfirm='searchCrew' placeholder='请输入小区名'></input>
+    <image src='../../../images/search.png'></image>
+  </view>
+  <view class='info_view'>
+    <view wx:for="{{projects}}" wx:key="Id" wx:for-item="item" class='item_info_view' data-sourceid="{{item.PropertyId}}" bindtap="intoSourceDetail">
+        <view class='crew_image_view'>
+          <image src='{{item.VicePic1}}'></image>
+        </view>
+        <view class='crew_detail_view'>
+          <text class='addr_text'>{{item.Address}}</text>
+          <text class='room_type_text'>{{item.RoomType+"/"+item.Area+"/"+item.Orientation}}</text>
+          <view class='advantage_view'>
+            <text class='advantage1_text'>地铁房</text>
+            <text class='advantage2_text'>随时看房</text>
+          </view>
+          <text class='price_text'>{{item.Price}}</text>
+        </view>
+    </view>
+  </view>
+</view>

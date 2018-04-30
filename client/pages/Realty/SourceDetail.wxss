@@ -1,0 +1,163 @@
+/* pages/Realty/SourceDetail.wxss */
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.feature_view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 92%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #F3F3F3;
+}
+.feature_inner_view {
+  font-size: 40rpx;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+.feature1_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  border-bottom: 1rpx solid #F3F3F3;
+}
+.feature1_price_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100rpx;
+}
+.feature1_type_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100rpx;
+}
+.feature1_area_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100rpx;
+}
+.inner_name {
+  font-size: 28rpx;
+  color: #c7d0d7; 
+} 
+.inner_val {
+  font-size: 32rpx;
+  color: red;
+}
+.advantage_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  width: 95%;
+}
+.advantage1_text {
+  padding: 5rpx 10rpx;
+  color: #91DF67;
+  background-color: #D2F2C1;
+}
+.advantage2_text {
+  padding: 5rpx 10rpx;
+  margin-left: 10rpx;
+  color: #45A3D6;
+  background-color: #C4E4F1;
+}
+.feature2_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+}
+.feature2_inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 80rpx;
+}
+.feature2_row_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+  height: 80rpx;
+}
+
+.feature2_name {
+  font-size: 32rpx;
+  color: #c7d0d7;
+}
+.feature2_val {
+  font-size: 32rpx;
+}
+.feature3_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 95%;
+}
+.feature3_title_view {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+.feature3_content_view {
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  flex-wrap: wrap;
+}
+.bottom_view {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0rpx;
+  height: 100rpx;
+  background-color: #F3F3F3;
+}
+.attention_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25%;
+}
+.attention_view image {
+  width: 45rpx;
+  height: 45rpx;
+}
+.attention_view text {
+  font-size: 20rpx;
+  color: #01AE66;
+}
+.commit_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+.commit_view button {
+  height: 65rpx;
+  width: 90%;
+  background-color: #01AE66;
+  color: white;
+  line-height: 65rpx;
+}

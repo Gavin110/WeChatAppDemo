@@ -1,0 +1,99 @@
+/* pages/realty/SourceList.wxss */
+.source_list {
+  background-color: #ffffff;
+}
+.search_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 250rpx;
+  width: 100%;
+  background-image: url('https://file.iviewui.com/iview-admin/login_bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.search_view image {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  z-index: 50;
+  /* top: 30rpx;  */
+   right: 45rpx; 
+}
+.search_view input {
+  position: relative;
+  left: 25rpx; 
+  /* border: 1rpx solid #28B4FF; */
+  width: 100%; 
+  height: 60rpx;
+   border-radius: 2rpx; 
+  color: #C7D0D7;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #ffffff;
+}
+.info_view {
+  width: 100%;
+}
+.item_info_view {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #F3F3F3;
+}
+
+.crew_image_view {
+  width: 40%;
+  height: 250rpx;
+}
+.crew_image_view image{
+  width: 100%;
+  height: 250rpx;
+}
+.crew_detail_view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 60%;
+  /* height: 300rpx; */
+  margin-left: 20rpx;
+}
+.addr_text {
+  font-size: 32rpx;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+}
+.room_type_text {
+  margin-top: 15rpx;
+  font-size: 28rpx;
+  color: #c7d0d7;
+}
+.advantage_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+.advantage1_text {
+  padding: 5rpx 10rpx;
+  color: #91DF67;
+  background-color: #D2F2C1;
+}
+.advantage2_text {
+  padding: 5rpx 10rpx;
+  margin-left: 10rpx;
+  color: #45A3D6;
+  background-color: #C4E4F1;
+}
+.price_text {
+  margin-top: 15rpx;
+  color: red;
+  font-size: 40rpx;
+
+}

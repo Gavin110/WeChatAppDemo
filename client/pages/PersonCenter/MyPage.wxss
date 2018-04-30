@@ -1,0 +1,65 @@
+/* pages/PersonCenter/MyPage.wxss */
+.my_page {
+  /* background-color: #F5F5F5; */
+}
+.user_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 170rpx;
+  background-color: #F5F5F5;
+}
+.user_view image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
+}
+.user_phone_view {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.user_content_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 10rpx;
+  background-color: #F5F5F5;
+}
+.content_inner_view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  border-bottom: 1rpx solid white;
+}
+.content_name {
+  width: 85%;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.content_inner_view image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.quit_button_view {
+  display: flex;
+  margin-top: 80rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.quit_button_view button {
+  height: 65rpx;
+  width: 90%;
+  background-color: #01AE66;
+  color: white;
+  line-height: 65rpx;
+}

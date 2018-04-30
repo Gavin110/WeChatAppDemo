@@ -4,4 +4,34 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  font-family: "Microsoft YaHei";
+  background-color: #fff;
 } 
+.btn_light {
+  background-color: #365e8a;
+  color: #fff;
+}
+
+/* 绿色 */
+
+.btn_light {
+  background-color: #28b4ff;
+  color: #fff;
+}
+
+/* 文字颜色 */
+
+.lbl {
+  /* color: #c7d0d7; */
+  /* font-family: "Microsoft YaHei"; */
+  font-size: 32rpx;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+}
+
+.lbl-underline {
+  color: #fff;
+}
+
+.lbl-highlight {
+  color: #28b4ff;
+}

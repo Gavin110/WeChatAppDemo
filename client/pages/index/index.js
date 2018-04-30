@@ -19,7 +19,7 @@ Page({
     touchend: function (e) {
       var animation = wx.createAnimation({
         duration: 500,
-        timingFunction: 'linear',
+        timingFunction: 'ease',
       })
       
       this.data.end_clientX = e.changedTouches[0].clientX;

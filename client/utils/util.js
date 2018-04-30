@@ -39,4 +39,33 @@ var showModel = (title, content) => {
     })
 }
 
-module.exports = { formatTime, showBusy, showSuccess, showModel }
+//const baseUrl = "http://localhost:54389/api/Values/";
+const baseUrl = "https://413320920.liugy.club:8082/api/Values/";
+const requestJson = (url, data, success) => {
+  wx.request({
+    url: baseUrl + url,
+    data: data,
+    header: {
+      "client": "ajax"
+    },
+    method: 'GET',
+    dataType: 'json',   //预期服务器返回的数据类型
+    responseType: 'text', //设置响应的数据类型。合法值：text、arraybuffer
+    success: function (res) {
+      success(res.data);
+    },
+    fail: function (res) {
+      
+    },
+    complete: function (res) {
+    },
+  })
+}
+
+module.exports = { 
+  formatTime, 
+  showBusy, 
+  showSuccess, 
+  showModel,
+  requestJson
+   }
