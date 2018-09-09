@@ -8,6 +8,24 @@ Page({
   
   },
 
+  actionSheet: function (event) {
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success: function (res) {
+        console.log(res.tapIndex)
+      },
+      fail: function (res) {
+        console.log(res.errMsg)
+      }
+    })
+  },
+  getUserInfo: function (e) {
+    console.log("eeeeeeeeeeeee===============", e)
+    // app.globalData.userInfo = e.detail.userInfo;
+    //调用微信登陆wx.login，获取code,然后调用后台接口获取UnionID并且塞进app.globalData中
+    // this.getUnionID(e.detail.encryptedData, e.detail.iv);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,5 +80,6 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  
 })

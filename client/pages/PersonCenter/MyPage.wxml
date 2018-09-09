@@ -6,7 +6,7 @@
   </view>
   <view class='user_content_view'>
     <view class='content_inner_view'>
-      <text class='content_name'>我关注的佳佳</text>
+      <text class='content_name'>我的关注</text>
       <image src="../../../images/right_array.png"></image>
     </view>
     <view class='content_inner_view'>
@@ -23,6 +23,7 @@
     </view>
   </view>
   <view class='quit_button_view'>
-    <button>退出登陆</button>
+   <!-- <button class='login_btn btn_green' wx:if="{{!hasCpUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button> -->
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">退出登陆</button>
   </view>
 </view>

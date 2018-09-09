@@ -5,6 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    Price: 0.00,
+    RoomType: "",
+    Area: 0,
+    Orientation: "",
+    RepairCost: "",
+    Roi: 0.00,
+    Floor: "",
+    ManageFee: 0.00,
+    Rent: 0.00,
+    BuildDate: "",
+    Status: "",
+    LandRight: "",
+    Address: "",
+    Traffic: "",
     movies: [
       { url: 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg' },
       { url: 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg' },
@@ -40,14 +54,30 @@ Page({
     util.requestJson('getSourceData', {
       sourceId: options.sourceId
     }, function (res) {
+      var sourceDetailObj = res[0];
+      _this.setData({ Price: sourceDetailObj.Price });
+      _this.setData({ RoomType: sourceDetailObj.RoomType });
+      _this.setData({ Area: sourceDetailObj.Area });
+      _this.setData({ Orientation: sourceDetailObj.Orientation });
+      _this.setData({ RepairCost: sourceDetailObj.RepairCost });
+      _this.setData({ Roi: sourceDetailObj.Roi });
+      _this.setData({ Floor: sourceDetailObj.Floor });
+      _this.setData({ ManageFee: sourceDetailObj.ManageFee });
+      _this.setData({ Rent: sourceDetailObj.Rent });
+      _this.setData({ BuildDate: sourceDetailObj.BuildDate.substring(0,10) });
+      _this.setData({ Status: sourceDetailObj.Status });
+      _this.setData({ LandRight: sourceDetailObj.LandRight });
+      _this.setData({ Address: sourceDetailObj.Address });
+      _this.setData({ Traffic: sourceDetailObj.Traffic });
+
       var tempMovies = [];
-      tempMovies.push({ 'url': res[0].VicePic1});
-      tempMovies.push({ 'url': res[0].VicePic2 });
-      tempMovies.push({ 'url': res[0].VicePic3 });
-      tempMovies.push({ 'url': res[0].VicePic4 });
-      tempMovies.push({ 'url': res[0].VicePic5 });
-      tempMovies.push({ 'url': res[0].VicePic6 });
-      _this.setData({movies: tempMovies})
+      tempMovies.push({ 'url': sourceDetailObj.VicePic1});
+      tempMovies.push({ 'url': sourceDetailObj.VicePic2 });
+      tempMovies.push({ 'url': sourceDetailObj.VicePic3 });
+      tempMovies.push({ 'url': sourceDetailObj.VicePic4 });
+      tempMovies.push({ 'url': sourceDetailObj.VicePic5 });
+      tempMovies.push({ 'url': sourceDetailObj.VicePic6 });
+      _this.setData({movies: tempMovies});
     })
     
   },
