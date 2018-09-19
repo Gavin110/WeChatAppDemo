@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/popup/index",
+    "pages/animation/index",
     "pages/Realty/SourceList",
     "pages/PersonCenter/MyPage",
     "pages/Realty/SourceDetail"

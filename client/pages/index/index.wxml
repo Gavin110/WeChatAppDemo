@@ -1,6 +1,54 @@
 <!--index.wxml-->
 <view class="container index" animation="{{animationData}}" bindtouchend='touchend' bindtouchstart='touchstart'>
-   <view class='view1'>呵呵哒!</view>
-   <view class='view2'>哈哈!!</view>
-   <view class='view3'>哈哈!!</view>
+  <view class='view1'>呵呵哒!</view>
+  <view class='view2'>哈哈!!</view>
+  <view class='view3'>哈哈!!</view>
+</view>
+<button id='scroll_up' bindtap='toUpAnimation'>上划</button>
+<view class='to_up_box' animation="{{animationDataToUp}}" >
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+  <text>好的吧</text>
+</view>
+<view class='container_box'>
+  <view class='progress_box'>
+    <view class='progress_circle'>
+      <canvas class="progress_bg"
+      canvas-id="canvasProgressbg_weibo"> </canvas>
+            <canvas class="progress_canvas"
+      canvas-id="canvasProgress_weibo"> </canvas>
+      <!-- <image wx:else src="{{weiboImg}}" style="width: 180rpx; height: 180rpx;" /> -->
+      <!-- <view class="progress_info">
+        {{progressWeiboNum}}%
+      </view> -->
+    </view>
+    <view class='progress_name'>微博</view>
+  </view>
+  <!-- <view class='progress_box'>
+    <view class='progress_circle'>
+      <canvas class="progress_bg" canvas-id="canvasProgressbg_weixin"> </canvas>
+      <canvas class="progress_canvas" canvas-id="canvasProgress_weixin"> </canvas>
+      <view class="progress_info">
+        {{progressWeixinNum}}%
+      </view>
+    </view>
+    <view class='progress_name'>微信</view>
+  </view>
+  <view class='progress_box'>
+    <view class='progress_circle'>
+      <canvas class="progress_bg" canvas-id="canvasProgressbg_redbook"> </canvas>
+      <canvas class="progress_canvas" canvas-id="canvasProgress_redbook"> </canvas>
+      <view class="progress_info">
+        {{progressRedbookNum}}%
+      </view>
+    </view>
+    <view class='progress_name'>小红书</view>
+  </view> -->
 </view>
